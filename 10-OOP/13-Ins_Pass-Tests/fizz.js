@@ -1,8 +1,8 @@
 const fizzBuzz = (num) =>
 // .map() will run a block of code on each element of the 'num' array and return a new array with modified values.
   num.map((singleNum) => {
-      const multipleOf3 = singleNum % 3 === 0;
-      const multipleOf5 = singleNum % 5 === 0;
+      const multipleOf3 = singleNum % 3 === 0;//it is false when 1
+      const multipleOf5 = singleNum % 5 === 0;//it is false when 1
     // Meets the requirement of the fourth test: 'should return FizzBuzz if a multiple of both 3 and 5'
       if (multipleOf3 && multipleOf5) {
         return 'FizzBuzz';

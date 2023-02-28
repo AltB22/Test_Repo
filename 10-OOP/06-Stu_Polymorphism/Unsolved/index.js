@@ -18,15 +18,18 @@ function Student(first, last, age) {
 
     if (typeof input === 'number') {
       if (inRange(input, 90, 100)){
-        respone = 'A'
+        response = 'A'
       }
-      if (inRange(input, 80, 89)){
-        respone = 'B'
+      if (inRange(input, 80, 89)){ //could all be else ifs
+        response = 'B'
       }
       if (inRange(input, 70, 79)){
-        respone = 'C'
+        response = 'C'
       }
-      if (input < 60){
+      if (inRange(input, 60, 69)){
+        response = 'D'
+      }
+      if (input < 60){ //then this would be an else
         response = 'F'
       }
 
@@ -45,9 +48,15 @@ function Student(first, last, age) {
           response = '80-89'
           break;
         case 'C':
-          response = '80-89'
+          response = '70-79'
           break;
-      }      
+        case 'D':
+          response = '60-69'
+          break;
+        case 'F':
+          response < '60'
+          break;
+      }       
       return response;
     }
   };

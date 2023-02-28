@@ -26,6 +26,7 @@ class Restaurant {
 
         clearInterval(prepareInterval);
       } else {
+        // shift() removes the first element from an array and returns it
         const order = this.orders.shift();
 
         console.log(`#${order.id} has been prepared.`);

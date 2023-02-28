@@ -1,5 +1,5 @@
 // TODO: Add a comment describing what kind of function this is
-// This is a construction function creating an object
+// This is a constructor function creating an object
 function Character(name, type, age, strength, hitpoints) {
   this.name = name;
   this.type = type;

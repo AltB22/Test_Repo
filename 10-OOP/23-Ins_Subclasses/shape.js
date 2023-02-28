@@ -10,4 +10,4 @@ class Shape {
   }
 }
 
-module.exports = Shape;
+module.exports = Shape;//exports to use on another file

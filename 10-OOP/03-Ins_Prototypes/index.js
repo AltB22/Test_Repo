@@ -10,7 +10,7 @@ const person = {
   occupation: 'Full-Stack Web Developer',
 };
 
-console.log(person.occupation.toLowerCase());
+// console.log(person.occupation.toLowerCase());
 
 // Prototype methods on constructor function
 function Movie(title, releaseYear) {
@@ -19,9 +19,11 @@ function Movie(title, releaseYear) {
 }
 
 const superman = new Movie('Superman', 1978);
+// const batman = new Movie('Batman', '1989')
 
 Movie.prototype.logInfo = function () {
   console.log(`${this.title} was released in ${this.releaseYear}`);
 };
 
 superman.logInfo();
+
